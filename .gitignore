@@ -1,0 +1,8 @@
+node_modules
+dist
+
+# packed library
+
+*.tgz
+*tar.gz
+*.zip
