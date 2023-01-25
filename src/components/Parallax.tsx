@@ -20,8 +20,10 @@ const Parallax = ({ children, speed, className }: Props) => {
     };
   }, []);
 
+  const divStyle = { transform: `translateY(${scrollY * speed}px)` }
+
   return (
-    <div style={{ transform: `translateY(${scrollY * speed}px)` }} className = {className}>
+    <div style={divStyle} className = {className}>
       {children}
     </div>
   );

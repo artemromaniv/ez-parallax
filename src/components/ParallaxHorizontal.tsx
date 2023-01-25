@@ -19,8 +19,10 @@ const ParallaxHorizontal = ({ children, speed, className }: Props) => {
     };
   }, []);
 
+  const divStyle = { transform: `translateX(${scrollX * speed}px)` }
+
   return (
-    <div style={{ transform: `translateX(${scrollX * speed}px)` }} className = {className}>
+    <div style={divStyle} className = {className}>
       {children}
     </div>
   );
